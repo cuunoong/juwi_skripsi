@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "831105923145",
+    "firebase_url": "https://esp8266-01skripsi-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esp8266-01skripsi",
+    "storage_bucket": "esp8266-01skripsi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831105923145:android:46d35ba52b41a823382798",
+        "android_client_info": {
+          "package_name": "juwio.skripsweet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831105923145-rfggpdhjt9lkfln4pio96d72jlfprn9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHpFRE18abYBnugW7L2b7ngPNPLjh7ma0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831105923145-rfggpdhjt9lkfln4pio96d72jlfprn9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

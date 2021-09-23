@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Skripsi</string>
+    <string name="nilai_ph">-.--</string>
+    <string name="status_ph">pH saat ini</string>
+    <string name="informasi">i</string>
+    <string name="exit">EXIT</string>
+    <string name="keluar">KELUAR</string>
+    <string name="mati">Off</string>
+    <string name="off">Off</string>
+</resources>
