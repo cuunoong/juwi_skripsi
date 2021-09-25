@@ -1,25 +1,24 @@
 package juwio.skripsweet;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.Switch;
 import android.widget.TextView;
 
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import juwio.skripsweet.models.Data;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton power;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("");
+    DatabaseReference myRef = database.getReference("data");
     ValueEventListener listener;
 
     @Override
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         listener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Model value = dataSnapshot.getValue(Model.class);
+                Data value = dataSnapshot.getValue(Data.class);
 
                 nilaiPh.setText(String.valueOf(value.getPh()));
                 status.setText(value.getStatus());
@@ -92,5 +91,10 @@ public class MainActivity extends AppCompatActivity {
             power.setImageTintList(getColorStateList(R.color.red));
         }
         powerStatus = !powerStatus;
+    }
+
+    public void history(View view) {
+        Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
     }
 }

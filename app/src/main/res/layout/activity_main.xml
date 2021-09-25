@@ -18,6 +18,15 @@
             android:gravity="end"
             android:orientation="horizontal">
 
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_baseline_history_24"
+                android:background="@drawable/button_rounded"
+                app:tint="@color/black"
+                android:onClick="history"/>
+
             <Button
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -25,7 +34,7 @@
                 android:onClick="informasi"
                 android:text="@string/informasi"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout

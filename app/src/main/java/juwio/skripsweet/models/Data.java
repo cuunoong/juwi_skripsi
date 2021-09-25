@@ -1,13 +1,13 @@
-package juwio.skripsweet;
+package juwio.skripsweet.models;
 
-public class Model {
+public class Data {
     float ph;
     String status;
 
-    public Model() {
+    public Data() {
     }
 
-    public Model(float ph, String status) {
+    public Data(float ph, String status) {
         this.ph = ph;
         this.status = status;
     }
